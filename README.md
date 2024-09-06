@@ -59,30 +59,34 @@ Follow the steps outlined above to complete the project successfully.
 
 # Presentation Talking Points
 
-Example #: [Insert Example Number]
+Example #: 1
 
 ## Imperative Approach [2 Minutes]
-1. **Step-by-Step Explanation:** Start by explaining the code logic in the imperative approach.
-   - Mention each step of the process in the code.
-   - Describe how the code provides explicit instructions for each action.
-   - Discuss the use of variables to track the state and progress of the process.
+1. **Step-by-Step Explanation:** 
+   - The second example walks through the entire cooking process with detailed instructions for each action. 
+   - The grill is preheated, the steak is seasoned, and a loop is used to monitor and adjust the cooking progress based on internal temperature.
+   - The use of a while loop to track the steak's internal temperature and the explicit instruction to adjust the grill temperature based on the steak's weight demonstrate a step-by-step approach.
+2. **Emphasis on How:** 
+   - The code focuses on "how" the cooking is performed, with explicit control over each part of the process. For instance, the while loop ensures that the steak continues cooking until it reaches the desired doneness.
+   - Variables like grillTemperature and steakTemperature are used to track mutable states, demonstrating a focus on low-level control of the cooking process.
 
-2. **Emphasis on How:** Highlight how the imperative approach focuses on detailing "how" the task is accomplished.
-   - Point out the use of loops, conditions, and explicit instructions.
-   - Discuss any mutable variables or states that change during execution.
-
-
-Example #: [Insert Example Number]
+Example #: 2
 
 ## Declarative Approach [2 Minutes]
-1. **High-Level Process Description:** Explain the code logic in the declarative approach.
-   - Describe the cooking process in a high-level, abstract manner.
-   - Emphasize that the code defines "what" should happen rather than "how" it should happen.
+1. **High-Level Process Description:** 
+   - In this example, the cooking process is described as a series of steps in an array (cookingProcess), where each step is an object with key information about the action.
+   - The focus is on defining "what" needs to be done rather than "how" to perform each step.
+   - Each action is mapped out with no detailed explanation of the underlying mechanics of grilling or cooking. 
+   - The logic behind how the steak is cooked or how seasoning is applied is abstracted away.
 
-2. **Use of Data Structures:** Discuss the use of data structures (e.g., arrays, objects) to represent the process steps.
-   - Explain how the process steps are organized in a structured format.
-   - Mention any abstraction layers or functions used to encapsulate actions.
+2. **Use of Data Structures:** 
+   - The array cookingProcess is used to represent the sequence of actions in the steak-cooking process.
+   - This structured representation allows each step to be clearly organized.
+   - Instead of explicitly coding each action in terms of its mechanics (e.g., looping through temperature checks), the process is encapsulated in objects that simply declare what should happen at each step.
 
-# Learning Outcome [1 Minute]
-- Reflect on what you've learned from analyzing these code examples in different paradigms.
+# Learning Outcome   
+   - In conclusion, Example #2 follows the declarative style, focusing on "what" should be done through a high-level process definition, while Example #1 uses an imperative style by detailing "how" to perform each action through explicit instructions and state management.
+
+   Loom Link: https://www.loom.com/share/75a1342e261245e8b906ef2eb52b19fa?sid=312d495d-b803-4d18-8e0f-7afdda160a1c
+
 
