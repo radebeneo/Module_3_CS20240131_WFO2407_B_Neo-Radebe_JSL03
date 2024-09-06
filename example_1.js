@@ -14,14 +14,20 @@ function cookSteak(steakWeight, desiredDoneness) {
     let cookingTime = 0;
 
     while (steakTemperature < desiredDoneness) {
+
       // Grill the steak and measure internal temperature
       if (cookingTime % cookingTimePerSide === 0 && cookingTime !== 0) {
         console.log('Flipping the steak...');
       }
+
       // Adjust grill temperature and cooking time based on steakWeight and desiredDoneness
-      // Update steakTemperature
-      
+      steakTemperature += 5; // Each iteration increases the steak's temperature by 5°C
+      cookingTime += 1; // Simulate time passing per minute
+
       // If the steak is done, break out of the loop
+      if (steakTemperature >= desiredDoneness) {
+        break;
+      }
     }
     
     // Step 4: Serve the steak
