@@ -11,9 +11,13 @@ function cookSteak(steakWeight, desiredDoneness) {
     
     // Step 3: Cook the steak
     const cookingTimePerSide = (steakWeight / 16) * 5; // Approximation: 5 minutes per side per 16 oz steak
-    
+    let cookingTime = 0;
+
     while (steakTemperature < desiredDoneness) {
       // Grill the steak and measure internal temperature
+      if (cookingTime % cookingTimePerSide === 0 && cookingTime !== 0) {
+        console.log('Flipping the steak...');
+      }
       // Adjust grill temperature and cooking time based on steakWeight and desiredDoneness
       // Update steakTemperature
       
