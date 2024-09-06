@@ -1,6 +1,6 @@
 function cookSteak(steakWeight, desiredDoneness) {
     let grillTemperature = 0;
-    let steakTemperature = 0;
+    let steakTemperature = 0; // Initial temperature of the steak
     
     // Step 1: Preheat the grill
     grillTemperature = 204; 
@@ -10,6 +10,8 @@ function cookSteak(steakWeight, desiredDoneness) {
     // Apply seasoning to both sides of the steak
     
     // Step 3: Cook the steak
+    const cookingTimePerSide = (steakWeight / 16) * 5; // Approximation: 5 minutes per side per 16 oz steak
+    
     while (steakTemperature < desiredDoneness) {
       // Grill the steak and measure internal temperature
       // Adjust grill temperature and cooking time based on steakWeight and desiredDoneness
